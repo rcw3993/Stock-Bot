@@ -80,4 +80,3 @@ with tab3:
 with tab4:
     st.bar_chart(filtered_df.set_index("Ticker")["SharpeRatio"])
 
-# streamlit run c:/Users/David/MNIST-Digits-CNN/Display-Stock-Dashboard.py
