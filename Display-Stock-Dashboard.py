@@ -72,7 +72,7 @@ with tab1:
     st.bar_chart(filtered_df.set_index("Ticker")["FinalScore"])
 
 with tab2:
-    st.bar_chart(filtered_df.set_index("Ticker")["P/E"])
+    st.bar_chart(filtered_df.set_index("Ticker")["P/E_Score"])
 
 with tab3:
     st.bar_chart(filtered_df.set_index("Ticker")["FreeCashFlow"])
@@ -80,24 +80,24 @@ with tab3:
 with tab4:
     st.bar_chart(filtered_df.set_index("Ticker")["SharpeRatio"])
 
-with tab4:
+with tab5:
     st.bar_chart(filtered_df.set_index("Ticker")["Momentum_3m"])
 
-with tab4:
+with tab6:
     st.bar_chart(filtered_df.set_index("Ticker")["Volatility_30d"])
 
-with tab4:
+with tab7:
     st.bar_chart(filtered_df.set_index("Ticker")["Trend_50_200"])
 
-with tab4:
+with tab8:
     st.bar_chart(filtered_df.set_index("Ticker")["Momentum_1m_Score"])
 
-with tab4:
+with tab9:
     st.bar_chart(filtered_df.set_index("Ticker")["Momentum_3m_Score"])
 
-with tab4:
+with tab10:
     st.bar_chart(filtered_df.set_index("Ticker")["Volatility_30d_Score"])
 
-with tab4:
-    st.bar_chart(filtered_df.set_index("Ticker")["SharpTrend_50_200_ScoreeRatio"])
+with tab11:
+    st.bar_chart(filtered_df.set_index("Ticker")["SharpTrend_50_200_Score"])
 
