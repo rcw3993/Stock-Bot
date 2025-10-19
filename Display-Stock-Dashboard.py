@@ -66,7 +66,7 @@ col3.metric("Best Final Score", f"{filtered_df['FinalScore'].max():.3f}")
 # --- Charts ---
 st.subheader("Score Distribution")
 
-tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11 = st.tabs(["Final Score", "P/E Ratio", "Free Cash Flow", "Sharpe Ratio","Momentum_3m","Volatility_30d","Trend_50_200","Momentum_1m_Score","Momentum_3m_Score","Volatility_30d_Score","Trend_50_200_Score"])
+tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs(["Final Score", "P/E Ratio", "Free Cash Flow", "Sharpe Ratio", "Momentum_1m_Score", "Momentum_3m_Score", "Volatility_30d_Score", "Trend_50_200_Score"])
 
 with tab1:
     st.bar_chart(filtered_df.set_index("Ticker")["FinalScore"])
@@ -80,15 +80,15 @@ with tab3:
 with tab4:
     st.bar_chart(filtered_df.set_index("Ticker")["SharpeRatio_Score"])
 
-with tab8:
+with tab5:
     st.bar_chart(filtered_df.set_index("Ticker")["Momentum_1m_Score"])
 
-with tab9:
+with tab6:
     st.bar_chart(filtered_df.set_index("Ticker")["Momentum_3m_Score"])
 
-with tab10:
+with tab7:
     st.bar_chart(filtered_df.set_index("Ticker")["Volatility_30d_Score"])
 
-with tab11:
+with tab8:
     st.bar_chart(filtered_df.set_index("Ticker")["Trend_50_200_Score"])
 
