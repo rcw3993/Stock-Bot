@@ -4,7 +4,7 @@ import pandas as pd
 # --- Load data ---
 @st.cache_data
 def load_data():
-    df = pd.read_csv("sp500_scores_with_sectors.csv")
+    df = pd.read_csv("sp500_scores_cleaned.csv")
     return df
 
 df = load_data()
